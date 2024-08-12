@@ -1,7 +1,7 @@
 {
   "name": "first-react",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.6.0",
     "@fortawesome/free-brands-svg-icons": "^6.6.0",
@@ -16,7 +16,7 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://mystys2.github.io/first-react/public",
+  "homepage": "https://mystys2.github.io/first-react/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
