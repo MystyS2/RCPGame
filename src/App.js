@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './App.css';
 import Box from './component/Box';
 // 폰트어썸 import
@@ -39,6 +39,7 @@ function App() {
   const [userSelect, setUserSelect] = useState(null);
   const [computerSelect, setComputerSelect] = useState(null);
   const [result, setResult] = useState(null);
+  const [colorIndex, setColorIndex] = useState(0);
 
   const play =(userChoice)=>{
     // user의 선택
@@ -68,9 +69,25 @@ function App() {
   };
 
 
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setColorIndex(prevIndex => (prevIndex + 2) % 3); // 0, 1, 2로 반복
+    }, 1000);
+
+    // 컴포넌트 언마운트 시 interval 제거
+    return () => clearInterval(intervalId);
+  }, []);
+
+  // 색상 배열
+  const colors = ['red', 'black', 'black'];
+
   return (
     <div className="Container">
-      <h1>가위 바위 보!</h1>
+      <div className="title">
+        <h1 style={{ color: colors[colorIndex] }}>가위</h1>
+        <h1 style={{ color: colors[(colorIndex + 1) % 3] }}>바위</h1>
+        <h1 style={{ color: colors[(colorIndex + 2) % 3] }}>보!</h1>
+      </div>
       <div className='Boxes'>
         <Box title="User" item={userSelect} result = {result}/>
         <Box title="Computer" item={computerSelect} result = {result}/>
