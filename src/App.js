@@ -134,7 +134,8 @@ function App() {
             <h1 style={{ color: colors[(colorIndex + 2) % 3] }}>보!</h1>
           </div>
 
-          <Table className="justify-between before:bg-white/10 border-white/20 border-1 before:rounded-xl rounded-large bottom-1 w-[calc(100%_-_8px)] ml-1 gap-0 ">
+          <Table aria-label="User and Computer Scores"
+            className="justify-between before:bg-white/10 border-white/20 border-1 before:rounded-xl rounded-large bottom-1 w-[calc(100%_-_8px)] ml-1 gap-0 ">
             <TableHeader>
               <TableColumn>USER</TableColumn>
               <TableColumn>COMPUTER</TableColumn>
@@ -153,9 +154,9 @@ function App() {
           </div>
 
           <div className='Buttons'>
-            <button onClick={() => play("rock")}><FontAwesomeIcon icon={faHandBackFist} size="2x"/></button>
-            <button onClick={() => play("scissors")}><FontAwesomeIcon icon={faHandScissors} size="2x"/></button>
-            <button onClick={() => play("paper")}><FontAwesomeIcon icon={faHand} size="2x"/></button>
+            <button onClick={() => play("rock")} aria-label="Rock"><FontAwesomeIcon icon={faHandBackFist} size="2x"/></button>
+            <button onClick={() => play("scissors")} aria-label="Scissors"><FontAwesomeIcon icon={faHandScissors} size="2x"/></button>
+            <button onClick={() => play("paper")} aria-label="Paper"><FontAwesomeIcon icon={faHand} size="2x"/></button>
           </div>
         </div>
       </div>
