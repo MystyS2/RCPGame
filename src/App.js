@@ -34,6 +34,8 @@ function App() {
   const [computerSelect, setComputerSelect] = useState(null); // 컴퓨터 선택
   const [result, setResult] = useState(null); // 승패 결과
   const [colorIndex, setColorIndex] = useState(0);  // 타이틀 색 변화에 사용하는 colors 리스트 인덱스
+  const [userScore, setUserScore] = useState(0);  // 유저 점수
+  const [computerScore, setComputerScore] = useState(0);  // 컴퓨터 점수
 
   const play =(userChoice)=>{
     // user의 선택
@@ -47,6 +49,10 @@ function App() {
     // 폭죽 터뜨리기
     if(tempResult==="WIN"){
       firework();
+      // user score 카운트 증가
+      setUserScore(userScore+1);
+    } else if(tempResult ==="LOSE") {
+      setComputerScore(computerScore+1);
     }
   };
 
@@ -135,8 +141,8 @@ function App() {
             </TableHeader>
             <TableBody>
               <TableRow key="1">
-                <TableCell>0</TableCell>
-                <TableCell>0</TableCell>
+                <TableCell className="userScore">{userScore}</TableCell>
+                <TableCell className="cpuScore">{computerScore}</TableCell>
               </TableRow>
             </TableBody>
           </Table>
