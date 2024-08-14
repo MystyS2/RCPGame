@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/RCPGame/static/css/main.99dbcede.css",
-    "main.js": "/RCPGame/static/js/main.bdd73ee5.js",
+    "main.js": "/RCPGame/static/js/main.2b53142e.js",
     "static/js/453.06c464ff.chunk.js": "/RCPGame/static/js/453.06c464ff.chunk.js",
     "index.html": "/RCPGame/index.html",
     "main.99dbcede.css.map": "/RCPGame/static/css/main.99dbcede.css.map",
-    "main.bdd73ee5.js.map": "/RCPGame/static/js/main.bdd73ee5.js.map",
+    "main.2b53142e.js.map": "/RCPGame/static/js/main.2b53142e.js.map",
     "453.06c464ff.chunk.js.map": "/RCPGame/static/js/453.06c464ff.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.99dbcede.css",
-    "static/js/main.bdd73ee5.js"
+    "static/js/main.2b53142e.js"
   ]
 }
