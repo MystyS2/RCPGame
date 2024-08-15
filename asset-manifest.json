@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/RCPGame/static/css/main.99dbcede.css",
-    "main.js": "/RCPGame/static/js/main.2b53142e.js",
-    "static/js/453.06c464ff.chunk.js": "/RCPGame/static/js/453.06c464ff.chunk.js",
-    "index.html": "/RCPGame/index.html",
-    "main.99dbcede.css.map": "/RCPGame/static/css/main.99dbcede.css.map",
-    "main.2b53142e.js.map": "/RCPGame/static/js/main.2b53142e.js.map",
-    "453.06c464ff.chunk.js.map": "/RCPGame/static/js/453.06c464ff.chunk.js.map"
+    "main.css": "/RSPGame/static/css/main.99dbcede.css",
+    "main.js": "/RSPGame/static/js/main.540120cc.js",
+    "static/js/453.06c464ff.chunk.js": "/RSPGame/static/js/453.06c464ff.chunk.js",
+    "index.html": "/RSPGame/index.html",
+    "main.99dbcede.css.map": "/RSPGame/static/css/main.99dbcede.css.map",
+    "main.540120cc.js.map": "/RSPGame/static/js/main.540120cc.js.map",
+    "453.06c464ff.chunk.js.map": "/RSPGame/static/js/453.06c464ff.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.99dbcede.css",
-    "static/js/main.2b53142e.js"
+    "static/js/main.540120cc.js"
   ]
 }
